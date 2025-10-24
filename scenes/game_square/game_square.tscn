@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://u6xfw75hjd3t"]
 
-[ext_resource type="Script" uid="uid://cl64vmuhlg838" path="res://game_square.gd" id="1_y2b6y"]
-[ext_resource type="Script" uid="uid://cntygqu3gke8q" path="res://circle.gd" id="2_yg47s"]
+[ext_resource type="Script" uid="uid://cl64vmuhlg838" path="res://scenes/game_square/game_square.gd" id="1_1o7tc"]
+[ext_resource type="Script" uid="uid://cntygqu3gke8q" path="res://scenes/game_square/circle.gd" id="2_4w46j"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yg47s"]
 size = Vector2(987, 989)
@@ -15,7 +15,7 @@ border_width_bottom = 5
 border_color = Color(0.79799587, 0.14575243, 0.3126332, 1)
 
 [node name="GameSquare" type="Area2D"]
-script = ExtResource("1_y2b6y")
+script = ExtResource("1_1o7tc")
 
 [node name="ClickCollision" type="CollisionShape2D" parent="."]
 position = Vector2(500.5, 501.5)
@@ -46,6 +46,6 @@ mouse_behavior_recursive = 1
 theme_override_styles/panel = SubResource("StyleBoxFlat_y2b6y")
 
 [node name="Circle" type="Node2D" parent="."]
-script = ExtResource("2_yg47s")
+script = ExtResource("2_4w46j")
 
 [connection signal="input_event" from="." to="." method="_on_input_event"]

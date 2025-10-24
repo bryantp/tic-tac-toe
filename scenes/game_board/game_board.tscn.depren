@@ -1,12 +1,11 @@
 [gd_scene load_steps=2 format=3 uid="uid://bw7t5ayu8c2no"]
 
-[ext_resource type="Script" uid="uid://c5ye0vypmfy6m" path="res://game_board.gd" id="1_xrvgy"]
+[ext_resource type="Script" uid="uid://c5ye0vypmfy6m" path="res://scenes/game_board/game_board.gd" id="1_mg2ed"]
 
 [node name="MainGame" type="Node2D"]
-script = ExtResource("1_xrvgy")
+script = ExtResource("1_mg2ed")
 
 [node name="InputBlockingRect" type="ColorRect" parent="."]
-visible = false
 z_index = 2
 offset_right = 999.0
 offset_bottom = 1000.0
@@ -26,5 +25,5 @@ offset_right = 70.5
 offset_bottom = 11.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_font_sizes/font_size = 80
+theme_override_font_sizes/font_size = 88
 text = "Other Player Goes"
