@@ -56,6 +56,8 @@ func place_x() -> void:
 		
 func _on_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
 	if event is InputEventMouseButton and (event as InputEventMouseButton).pressed:
+		if current_marker_type != MARKER_TYPE.NONE:
+			return	
 		print("Placing Mark on board")
 		place_x()
 		player_choice_made.emit(MARKER_TYPE.X)

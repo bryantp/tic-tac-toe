@@ -27,8 +27,27 @@ size_flags_horizontal = 4
 [node name="Label" type="Label" parent="PanelContainer/VBoxContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 80
 text = "Game Over!"
 
 [node name="MessageLabel" type="Label" parent="PanelContainer/VBoxContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 45
 text = "You Won!"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="RetryButton" type="Button" parent="PanelContainer/VBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+text = "Retry"
+
+[node name="BackToMenuButton" type="Button" parent="PanelContainer/VBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Main Menu"
+
+[connection signal="pressed" from="PanelContainer/VBoxContainer/VBoxContainer/HBoxContainer/RetryButton" to="." method="_on_retry_button_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/VBoxContainer/HBoxContainer/BackToMenuButton" to="." method="_on_back_to_menu_button_pressed"]

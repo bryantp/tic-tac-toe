@@ -11,7 +11,8 @@ static func ai_make_move(board_places: Array[GameSquare]) -> GameSquare:
 			
 	print("Found %s empty board pieces" % empty_board_indices.size())
 	# Pick one at random
-	var random_index = empty_board_indices[randi_range(0, empty_board_indices.size() - 1)]
+	var idx = randi_range(0, empty_board_indices.size() - 1)
+	var random_index = empty_board_indices[idx]
 	var chosen_board_piece = board_places[random_index]
 	print("Chose index (%s,%s) as my board piece" % _get_xy_from_int(random_index))
 	return chosen_board_piece
