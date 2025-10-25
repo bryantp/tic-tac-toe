@@ -12,7 +12,7 @@ var grid_count_vertical = 3
 var grid_count_horizontal = 3
 var board_places: Array[GameSquare] = []
 
-enum GAME_STATE {MAIN_MENU, SINGLE_PLAYER, GAME_OVER}
+enum GAME_STATE {MAIN_MENU, SINGLE_PLAYER, GAME_OVER, MULTI_PLAYER}
 var current_game_state = GAME_STATE.MAIN_MENU
 
 enum PLAYER_TURN {PLAYER_ONE, PLAYER_TWO}

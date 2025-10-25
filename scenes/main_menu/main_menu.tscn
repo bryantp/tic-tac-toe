@@ -31,10 +31,12 @@ layout_mode = 2
 text = "Single Player"
 
 [node name="Leaderboard" type="Button" parent="PanelContainer/VBoxContainer/HBoxContainer"]
+visible = false
 layout_mode = 2
 text = "Leaderboard"
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="PanelContainer/VBoxContainer"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 4
 
@@ -51,6 +53,7 @@ layout_mode = 2
 text = "Quit"
 
 [node name="SettingsButton" type="Button" parent="PanelContainer/VBoxContainer/HBoxContainer3"]
+visible = false
 layout_mode = 2
 text = "Setting"
 
